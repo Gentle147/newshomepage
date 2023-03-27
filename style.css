@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+  /* max-width: 768px; */
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  /* display: none; */
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 100vh;
+  width: 50%;
+  top: -70px;
+  right: 0;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 100px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.4s ease-in-out;
+}
+ul > li:hover {
+  color: var(--soft-red);
+}
+ul.active {
+  transform: scaleX(1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  position: relative;
+  /* top: -30px; */
+  /* margin-top: 30px; */
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 2;
+  margin-right: 0;
+}
+.bar {
+  padding: 2px 40px;
+  background-color: black;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.bar1.active {
+  transform: rotate(45deg);
+  top: 22px;
+}
+.bar2.active {
+  opacity: 0;
+}
+.bar3.active {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  ul {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+/* ////main/////////////////////////////////////// */
+
+body {
+  /* margin: 0; */
+  padding: 0 15px;
+}
+main {
+  margin-top: 30px;
+}
+.section1 {
+  margin-right: 0;
+}
+.section1 img {
+  /* width: 600px; */
+  height: 300px;
+  /* padding-top: 30px; */
+  width: 100%;
+}
+.bright {
+  font-family: "inter" sans-serif;
+  font-size: xx-large;
+  font-weight: 900;
+  padding-top: 20px;
+}
+.text1 {
+  color: var(--grayish-blue);
+  padding: 20px 0;
+  /* font-family: sans-serif; */
+}
+
+.section1 button {
+  width: 200px;
+  padding: 15px;
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  font-family: "inter" sans-serif;
+  margin-bottom: 50px;
+  border: none;
+}
+button:hover {
+  background-color: var(--very-dark-blue);
+}
+.section2 {
+  background-color: var(--very-dark-blue);
+  color: white;
+  margin-bottom: 50px;
+  padding: 15px;
+  /* margin-left: 60px; */
+  /* font-family:"inter" sans-serif; */
+}
+.section2 div {
+  padding: 20px 0;
+}
+.section2 > div > h2 {
+  padding-bottom: 20px;
+}
+h2:hover {
+  color: var(--soft-orange);
+}
+h4:hover {
+  color: var(--soft-orange);
+}
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    /* position: unset; */
+    gap: 30px;
+    transform: scaleX(1);
+    height: auto;
+    width: auto;
+  }
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section1 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin-left: 0; */
+  }
+
+  img {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/* /////////////////////////// */
+.retro {
+  display: flex;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+.retro > div {
+  margin: 0;
+}
+.retro img {
+  width: 100px;
+  margin: 0;
+}
+.retro h2 {
+  color: var(--grayish-blue);
+}
+.retro p {
+  color: var(--grayish-blue);
+}
+.laptops {
+  display: flex;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+.laptops > div {
+  margin: 0;
+}
+.laptops img {
+  width: 100px;
+  margin: 0;
+}
+.laptops h2 {
+  color: var(--grayish-blue);
+}
+.laptops p {
+  color: var(--grayish-blue);
+}
+.gaming {
+  display: flex;
+  max-width: 500px;
+  margin-bottom: 30px;
+  /* padding-left: 0; */
+}
+.gaming > div {
+  margin: 0;
+}
+.gaming img {
+  width: 100px;
+  margin: 0;
+}
+.gaming h2 {
+  color: var(--grayish-blue);
+}
+.gaming p {
+  color: var(--grayish-blue);
+}
+@media (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+footer h4:hover {
+  color: var(--soft-red);
+}
