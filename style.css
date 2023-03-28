@@ -12,12 +12,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "inter", sans-serif;
-  /* max-width: 768px; */
   max-width: 100%;
 }
 ul {
   list-style: none;
-  /* display: none; */
   position: absolute;
   background-color: white;
   color: black;
@@ -46,8 +44,6 @@ nav {
   align-items: center;
   padding: 10px 15px;
   position: relative;
-  /* top: -30px; */
-  /* margin-top: 30px; */
 }
 .hamburger {
   display: flex;
@@ -86,7 +82,6 @@ nav {
 /* ////main/////////////////////////////////////// */
 
 body {
-  /* margin: 0; */
   padding: 0 15px;
 }
 main {
@@ -96,9 +91,7 @@ main {
   margin-right: 0;
 }
 .section1 img {
-  /* width: 600px; */
   height: 300px;
-  /* padding-top: 30px; */
   width: 100%;
 }
 .bright {
@@ -182,7 +175,7 @@ h4:hover {
   margin-bottom: 30px;
 }
 .retro > div {
-  margin: 0;
+  margin-left: 20px;
 }
 .retro img {
   width: 100px;
@@ -200,7 +193,7 @@ h4:hover {
   margin-bottom: 30px;
 }
 .laptops > div {
-  margin: 0;
+  margin-left: 20px;
 }
 .laptops img {
   width: 100px;
@@ -219,7 +212,7 @@ h4:hover {
   /* padding-left: 0; */
 }
 .gaming > div {
-  margin: 0;
+  margin-left: 30px;
 }
 .gaming img {
   width: 100px;
